@@ -1,0 +1,25 @@
+{
+  "name": "tiapi",
+  "version": "0.0.1",
+  "description": "Tia do zap as a service (TAAS): Mensagens de bom dia em frases motivacionais",
+  "main": "./dist/index.js",
+  "author": "Tramonta <tramontano.guilherme@yahoo.com.br>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "concurrently \"tsc --watch\" \"nodemon ./dist/index.js\""
+  },
+  "dependencies": {
+    "axios": "^1.1.2",
+    "express": "^4.18.2",
+    "jsdom": "^20.0.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.14",
+    "@types/jsdom": "^20.0.0",
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  }
+}
