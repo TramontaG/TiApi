@@ -5,4 +5,4 @@ const app = express();
 
 app.use("/messages", BomDia);
 
-app.listen(2000);
+app.listen(5050);
