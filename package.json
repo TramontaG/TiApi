@@ -1,31 +1,33 @@
 {
-  "name": "tiapi",
-  "version": "0.0.1",
-  "description": "Tia do zap as a service (TAAS): Mensagens de bom dia em frases motivacionais",
-  "main": "./dist/index.js",
-  "author": "Tramonta <tramontano.guilherme@yahoo.com.br>",
-  "license": "MIT",
-  "private": false,
-  "scripts": {
-    "dev": "rm -rf ./dist && concurrently \"ttsc --watch\" \"nodemon ./dist/index.js\"",
-    "test": "jest"
-  },
-  "dependencies": {
-    "axios": "^1.1.2",
-    "express": "^4.18.2",
-    "jsdom": "^20.0.1"
-  },
-  "devDependencies": {
-    "@types/axios": "^0.14.0",
-    "@types/express": "^4.17.14",
-    "@types/jest": "^29.2.0",
-    "@types/jsdom": "^20.0.0",
-    "concurrently": "^7.4.0",
-    "jest": "^29.2.1",
-    "nodemon": "^2.0.20",
-    "ts-node": "^10.9.1",
-    "ttypescript": "^1.5.13",
-    "typescript": "^4.8.4",
-    "typescript-transform-paths": "^3.4.3"
-  }
+	"name": "tiapi",
+	"version": "0.0.1",
+	"description": "Tia do zap as a service (TAAS): Mensagens de bom dia em frases motivacionais",
+	"main": "./dist/index.js",
+	"author": "Tramonta <tramontano.guilherme@yahoo.com.br>",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"dev": "rm -rf ./dist && concurrently \"ttsc --watch\" \"nodemon ./dist/index.js\"",
+		"start": "ttsc && node ./dist/index.js",
+		"test": "jest"
+	},
+	"dependencies": {
+		"axios": "^1.1.2",
+		"express": "^4.18.2",
+		"jsdom": "^20.0.1"
+	},
+	"devDependencies": {
+		"@types/axios": "^0.14.0",
+		"@types/express": "^4.17.14",
+		"@types/jest": "^29.2.0",
+		"@types/jsdom": "^20.0.0",
+		"concurrently": "^7.4.0",
+		"jest": "^29.2.1",
+		"nodemon": "^2.0.20",
+		"ts-node": "^10.9.1",
+		"ttypescript": "^1.5.13",
+		"typedoc": "^0.23.19",
+		"typescript": "^4.8.4",
+		"typescript-transform-paths": "^3.4.3"
+	}
 }

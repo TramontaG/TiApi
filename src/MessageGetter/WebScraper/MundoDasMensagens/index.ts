@@ -17,12 +17,14 @@ type Options = {
 	textGetter: TextGetter;
 };
 
+/**
+ * retrieves messages from `https://www.mundodasmensagens.com`
+ */
 class MundoDasMensagensWebScraper {
 	private httpInstace: AxiosInstance;
 	private webSiteCacheService = new WebSiteCacheService(html => new JSDOM(html));
 	private imageGetter: ImageGetter;
 	private textGetter: TextGetter;
-
 	constructor({ imageGetter, textGetter }: Options) {
 		this.httpInstace = axios.create({
 			baseURL: BASE_URL,
