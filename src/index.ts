@@ -1,8 +1,8 @@
-import express from "express";
-import BomDia from "./MessageGetter";
+import express from 'express';
+import { MundoDasMensagens } from './Router/index';
 
 const app = express();
 
-app.use("/messages", BomDia);
+app.use('/mundodasmensagens', MundoDasMensagens());
 
 app.listen(5050);
