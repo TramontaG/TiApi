@@ -10,6 +10,13 @@ export const imageGetter = (dom: Document) => {
 	return imgData;
 };
 
-export const textGetter = (dom: Document) => [];
+export const textGetter = (dom: Document) => {
+	const messages = dom.querySelectorAll('.share-text');
+	const sanitizedMessages = [...Array.from(messages)].map(el =>
+		el.innerHTML.trim().replace(/<br>/g, '\n')
+	);
+
+	return sanitizedMessages;
+};
 
 export const pageAdder = (page: number) => '';
