@@ -1,6 +1,5 @@
 import express from 'express';
-import { MundoDasMensagens, BelasMensagens } from './Router/index';
-import { MensagensComAmor } from './Router/mensagensComAmor';
+import { MundoDasMensagens, BelasMensagens, MensagensComAmor } from './Router/index';
 
 const app = express();
 

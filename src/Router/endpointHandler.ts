@@ -19,7 +19,7 @@ const useScraper = (path: string, scraper: GenericWebScraper) => {
 		res.send(result);
 	};
 
-	router.get('/*', endpointHandler);
+	router.get(path + '/*', endpointHandler);
 
 	return router;
 };
