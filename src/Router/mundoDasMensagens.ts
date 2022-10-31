@@ -25,4 +25,8 @@ const mundoDasMensagensEndpoint: RequestHandler<{
 
 router.get('/*', mundoDasMensagensEndpoint);
 
+/**
+ * Mundo das mensagens router;
+ * @returns
+ */
 export const MundoDasMensagens = () => router;

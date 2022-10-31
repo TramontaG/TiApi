@@ -9,7 +9,8 @@
 	"scripts": {
 		"dev": "rm -rf ./dist && concurrently \"ttsc --watch\" \"nodemon ./dist/index.js\"",
 		"start": "ttsc && node ./dist/index.js",
-		"test": "jest"
+		"test": "jest",
+		"docs": "typedoc ./src/MessageGetter/index.ts ./src/CacheService/index.ts ./src/router/index.ts"
 	},
 	"dependencies": {
 		"axios": "^1.1.2",
