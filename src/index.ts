@@ -7,4 +7,4 @@ app.use('/mundodasmensagens', MundoDasMensagens());
 app.use('/belasmensagens', BelasMensagens());
 app.use('/mensagenscomamor', MensagensComAmor());
 
-app.listen(5050);
+app.listen(process.env.PORT || 5050);
