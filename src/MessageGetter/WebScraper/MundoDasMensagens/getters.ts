@@ -29,3 +29,7 @@ export const textGetter = (dom: Document) => {
 
 	return sanitizedMessages;
 };
+
+export const pageAdder = (page: number) => {
+	return `/${page}`;
+};
