@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from 'axios';
-import WebSiteCacheService from 'src/CacheService';
+import WebSiteCacheService from 'html-memo';
 import { JSDOM } from 'jsdom';
 
 const BASE_URL = 'https://www.mundodasmensagens.com';

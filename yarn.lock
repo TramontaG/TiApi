@@ -1654,6 +1654,11 @@ html-escaper@^2.0.0:
   resolved "https://registry.yarnpkg.com/html-escaper/-/html-escaper-2.0.2.tgz#dfd60027da36a36dfcbe236262c00a5822681453"
   integrity sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==
 
+html-memo@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/html-memo/-/html-memo-1.0.1.tgz#fccbc36566fd72d9a6ed316a79edf16e7d76690d"
+  integrity sha512-4XnsLf/bHDep5RiogLSLT6nUxyC77bYiIYW9D++lDaEYUlOA9VSzmDhf6sUk47h3A8O18dIdGfZiBAzjn34gag==
+
 http-errors@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-2.0.0.tgz#b7774a1486ef73cf7667ac9ae0858c012c57b9d3"
