@@ -6,9 +6,9 @@ I personally don't have a Tia Do Zap that sends me messages every single day. So
 
 ## How it works
 
-This is a web scraper API that will give you texts and images from the website [this](https://mundodasmensagens.com.br/) website (`https://mundodasmensagens.com.br/`). I made this API in a way that's easy to add more websites for scraping, all we need is to provide a website, an image-getter function and a text-getter function. More websites will be added soon!
+This is a web scraper API that will give you texts and images from websites such as  [this](https://mundodasmensagens.com.br/) (`https://mundodasmensagens.com.br/`). I made this API in a way that's easy to add more websites for scraping, all we need is to provide a website, an image-getter function and a text-getter function. More websites will be added soon!
 
-## Usage:
+## Usage example:
 
 For `https://mundodasmensagens.com.br/` any endpoint after `mundodasmensagens` will try to resolve to the same path.
 
@@ -28,6 +28,15 @@ return {
     }
 }
 ```
+## Resolvement List:
+```typescript
+{
+    `${BASE_URL}/mundodasmensagens/${endpoint}`:    `https://www.mundodasmensagens.com.br/${endpoint}`
+    `${BASE_URL}/mensagenscomamor/${endpoint}`:     `https://www.mensagenscomamor.com/${endpoint}`
+    `${BASE_URL}/belasmensagens/${endpoint}`:       `https://www.belasmensagens.com.br/${endpoint}`
+}
+```
+
 
 # Setup:
 
