@@ -47,3 +47,5 @@ It sets up just like any node project, however it has some quirks. You should co
 - run `yarn start` or `npm run start`
 
 For compilation in watch mode and nodemon, you can run `yarn dev` or `npm run dev`
+
+The project should be ready for deploy. Any automated system will run `yarn install && yarn start`. It just works!'
