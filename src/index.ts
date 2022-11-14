@@ -7,4 +7,6 @@ app.use('/mundodasmensagens', MundoDasMensagens());
 app.use('/belasmensagens', BelasMensagens());
 app.use('/mensagenscomamor', MensagensComAmor());
 
+console.log('Runing on develop branch');
+
 app.listen(process.env.PORT || 5050);
