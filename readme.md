@@ -1,4 +1,4 @@
-# TiApi: the first TDZAAS (Tia Do Zap As A Service) as far as I know
+# TiApi: the first TDZAAS (Tia Do Zap As A Service)
 
 ## Motivation:
 
