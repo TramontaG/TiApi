@@ -18,8 +18,6 @@ BelasMensagens.get('/random', async (req, res, next) => {
 		},
 	});
 
-	console.log(randomItem(data));
-
 	const randomPost = await formatPost(randomItem(data));
 
 	res.send(randomPost);
