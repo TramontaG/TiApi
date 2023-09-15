@@ -20,7 +20,7 @@ export const formatPost = async (
 
 	const extractedData: BelasMensagensExtractedData = {
 		text: unescape(
-			post.content.rendered.replace(/<(\/)?p>/g, '').replace(/<br >/g, '\n')
+			post.content.rendered.replace(/<(\/)?p>/g, '').replace(/<br (\/)?>/g, '\n')
 		),
 		title: post.title.rendered,
 		url: post.link,
