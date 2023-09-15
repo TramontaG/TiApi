@@ -4,11 +4,12 @@ import {
 	BelasMensagensExtractedData,
 	BelasMensagensPost,
 } from '../Models';
+import { unescape } from 'he';
 
 export const formatPost = async (
 	post: BelasMensagensPost
 ): Promise<BelasMensagensExtractedData> => {
-	const sanitizedAttachmentUrl = post._links['wp:attachment'][0].href.replace(
+	const sanitizedAttachmentUrl = post?._links['wp:attachment'][0].href.replace(
 		'https://www.belasmensagens.com.br/wp-json/wp/v2',
 		''
 	);
@@ -18,7 +19,9 @@ export const formatPost = async (
 	);
 
 	const extractedData: BelasMensagensExtractedData = {
-		text: post.content.rendered.replace(/<(\/)?p>/g, ''),
+		text: unescape(
+			post.content.rendered.replace(/<(\/)?p>/g, '').replace(/<br >/g, '\n')
+		),
 		title: post.title.rendered,
 		url: post.link,
 		media: null,
@@ -27,7 +30,7 @@ export const formatPost = async (
 	if (data.length) {
 		extractedData.media = {
 			mimetype: data[0].mime_type,
-			url: data[0].link,
+			url: data[0].source_url,
 		};
 	}
 
