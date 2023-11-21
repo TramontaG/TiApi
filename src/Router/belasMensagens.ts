@@ -23,6 +23,7 @@ BelasMensagens.get('/random', async (req, res, next) => {
 
 		res.send(randomPost);
 	} catch (e) {
+		console.warn(e);
 		res.status(500).send(e);
 	}
 });

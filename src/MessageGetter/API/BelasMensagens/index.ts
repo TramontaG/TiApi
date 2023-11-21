@@ -5,11 +5,13 @@ const BelasMensagensApi = axios.create({
 });
 
 BelasMensagensApi.interceptors.response.use(response => {
-	const newData = response.data.split('<script>')[0];
-	return {
-		...response,
-		data: JSON.parse(newData),
-	};
+	// console.log(response);
+	// const newData = response.data.split('<script>')[0];
+	// return {
+	// 	...response,
+	// 	data: JSON.parse(newData),
+	// };
+	return response;
 });
 
 export default BelasMensagensApi;
