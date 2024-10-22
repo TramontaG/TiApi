@@ -10,7 +10,8 @@
 		"dev-bun": "bun run --watch ./src/index.ts",
 		"start-bun": "bun run ./src/index.ts",
 		"dev": "rm -rf ./dist && concurrently \"ttsc --watch\" \"nodemon ./dist/index.js\" || concurrently \"ttsc --watch\" \"nodemon ./dist/index.js\"",
-		"start": "ttsc && node ./dist/index.js",
+		"start": "node ./dist/index.js",
+		"build": "tsc",
 		"test": "jest",
 		"docs": "typedoc ./src/MessageGetter/index.ts ./src/CacheService/index.ts ./src/router/index.ts"
 	},

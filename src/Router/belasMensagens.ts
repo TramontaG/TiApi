@@ -1,12 +1,14 @@
 import { Router } from 'express';
-import BelasMensagensApi from 'src/MessageGetter/API/BelasMensagens';
-import {
-	formatPost,
-	randomItem,
-} from 'src/MessageGetter/API/BelasMensagens/Helpers';
-import { BelasMensagensPost } from 'src/MessageGetter/API/BelasMensagens/Models';
+import BelasMensagensApi from '../MessageGetter/API/BelasMensagens';
+import { formatPost, randomItem } from '../MessageGetter/API/BelasMensagens/Helpers';
+import { BelasMensagensPost } from '../MessageGetter/API/BelasMensagens/Models';
 
 const BelasMensagens = Router();
+
+BelasMensagens.use('/', (req, res, next) => {
+	console.log('aaaa');
+	next();
+});
 
 BelasMensagens.get('/random', async (req, res, next) => {
 	try {
